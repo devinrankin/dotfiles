@@ -1,0 +1,75 @@
+@define-color black #0f0f0f;
+@define-color gray0 #141414;
+@define-color gray1 #1f1e1e;
+@define-color gray2 #272a28;
+@define-color gray3 #403b3b;
+@define-color gray4 #5f5858;
+@define-color gray5 #756c6c;
+@define-color gray6 #827373;
+@define-color gray7 #9a8d8d;
+@define-color gray8 #b2a9a9;
+@define-color gray9 #c7bdbd;
+@define-color gray10 #ded8d8;
+@define-color white #ebe0e0;
+@define-color blue #6199d1;
+@define-color red #f16e65;
+@define-color green #7ec97e;
+@define-color cyan #6fc3b5;
+@define-color yellow #f6eba2;
+@define-color orange #e8a069;
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: JetBrains Mono, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    color: @white;
+    background-color: @black;
+}
+
+window#waybar #window {
+  color: @red;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    background: transparent;
+    color: @white;
+    border-bottom: 3px solid transparent;
+}
+
+#workspaces button:hover {
+  box-shadow: inherit;
+  text-shadow: inherit;
+}
+
+#workspaces button.active {
+    background-color: @gray0;
+    border-bottom: 3px solid @gray1;
+}
+
+tooltip {
+  background: @black;
+  border: 1px solid @gray0;
+}
+tooltip label {
+  color: @white;
+}
+
+#waybar .modules-right .module {
+  margin: 0 0.5rem;
+  padding: 0 0.5rem;
+}
+
+#clock {
+  background-color: @gray1;
+}
+
+#wireplumber {
+  min-width: 4rem;
+}
+

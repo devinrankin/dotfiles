@@ -1,0 +1,43 @@
+{
+  "layer": "top",
+	"height": 30,
+	"spacing": 4,
+	"modules-left": [
+		"hyprland/workspaces"
+	],
+  "modules-center": [
+    "hyprland/window"
+  ],
+	"modules-right": [
+    "mpris",
+    "custom/fcitx5",
+    "wireplumber",
+		"clock"
+	],
+  "mpris": {
+    "format": "{player_icon} {artist} {status_icon}",
+    "player-icons": {
+      "default": ""
+    },
+    "status-icons": {
+      "paused": ""
+    },
+    "tooltip-format": "󰠃 {artist}\n󰀥 {album}\n {title}",
+
+    "ignored-players": ["libre-wolf"]
+  },
+  "custom/fcitx5": {
+    "exec": "~/.config/waybar/scripts/fcitx5-status.sh",
+    "interval": 1,
+    "return-type": "json"
+  },
+  "clock": {
+    "tooltip": false
+  },
+  "wireplumber": {
+    "on-click": "foot --app-id volume-control -e wiremix",
+    "format": "{volume}% {icon}",
+    "format-muted": "",
+    "format-icons": ["", "", ""]
+  }
+}
