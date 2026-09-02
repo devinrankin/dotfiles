@@ -1,0 +1,5 @@
+require("ashes.init").colorscheme()
+require("config.options")
+require("config.plugins")
+require("config.autocmd")
+require("config.lsp")
