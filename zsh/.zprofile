@@ -1,9 +1,9 @@
 #
-# ~/.zsh_profile
+# ~/.zprofile
 #
 
-[[ -f ~/.bashrc ]] && . ~/.bashrc
+[[ -f ~/.zshrc ]] && source . ~/.zshrc
 export TERM=foot
 export EDITOR=nvim
-export SHELL=bash
+export SHELL=zsh
 export PATH="${PATH:+$PATH:}/home/div/.cargo/bin/"
