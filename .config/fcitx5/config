@@ -15,7 +15,7 @@ EnumerateSkipFirst=False
 ModifierOnlyKeyTimeout=250
 
 [Hotkey/TriggerKeys]
-0=Control+space
+0=Control+Tab
 1=Zenkaku_Hankaku
 
 [Hotkey/AltTriggerKeys]
